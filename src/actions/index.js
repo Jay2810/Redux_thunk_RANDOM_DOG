@@ -13,7 +13,7 @@ export const requestDogError = () => {
   };
 
 export const resize = (value) => {
-    console.log("HOAL",value);
+  console.log("IN Action resize");
     if(value==="plus"){
     return {type : "RESIZE_IMAGEP"}
 }
