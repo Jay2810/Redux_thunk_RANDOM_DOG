@@ -21,7 +21,7 @@ else{
 }
 }
 
-export const resizeparam = (value) => {
+export const resizeparambyvalue = (value) => {
     console.log("HOAL2",value);
     return {type : "RESIZE_IMAGE_PARAM",size: Number(value)}
 }

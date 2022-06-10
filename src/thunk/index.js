@@ -1,4 +1,4 @@
-import { requestDog,requestDogSuccess,requestDogError,resize } from "../actions";
+import { requestDog,requestDogSuccess,requestDogError,resize,resizeparambyvalue } from "../actions";
 import axios from "axios";
 
 export const fetchDog = () => {
@@ -25,6 +25,6 @@ export const resizeimg = (value) =>{
 export const resizeparam = (value) => {
     console.log("PARAM",value);
     return dispatch => {
-        dispatch(resizeparam(500))
+        dispatch(resizeparambyvalue(value))
     }
 }
