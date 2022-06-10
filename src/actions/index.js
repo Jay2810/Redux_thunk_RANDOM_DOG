@@ -1,4 +1,5 @@
 export const requestDog = () => {
+  console.log('IN actions requestDog() | will only return type:"REQUESTED_DOG" ');
     return { type: "REQUESTED_DOG" };
   };
   
@@ -22,6 +23,6 @@ else{
 }
 
 export const resizeparambyvalue = (value) => {
-    console.log("HOAL2",value);
+    console.log("IN Action RESIZE BY PARAM will return (type,size) "  );
     return {type : "RESIZE_IMAGE_PARAM",size: Number(value)}
 }

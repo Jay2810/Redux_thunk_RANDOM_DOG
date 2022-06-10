@@ -1,6 +1,6 @@
 
 const initialState = {
-    url: "",
+    url: "https://images.dog.ceo/breeds/retriever-flatcoated/n02099267_2269.jpg",
     loading: false,
     error: false,
     size : 150
@@ -9,6 +9,7 @@ const initialState = {
 export const reducer = (state = initialState, action) => {
     switch (action.type) {
       case "REQUESTED_DOG":
+        console.log("IN Reducer (state,action)",state,'  ',action);
         return {
             ...state,
           url: "",
@@ -16,13 +17,15 @@ export const reducer = (state = initialState, action) => {
           error: false
         };
       case "REQUESTED_DOG_SUCCEEDED":
-        return {
+        console.log("IN Reducer (state,action)",state,'  ',action);  
+      return {
             ...state,
           url: action.url,
           loading: false,
           error: false
         };
       case "REQUESTED_DOG_FAILED":
+        console.log("IN Reducer (state,action)",state,'  ',action);
         return {
             ...state,
           url: "",
@@ -30,6 +33,7 @@ export const reducer = (state = initialState, action) => {
           error: true
         };
        case "RESIZE_IMAGEP":
+        console.log("IN Reducer (state,action)",state,'  ',action);
         return{
             ...state,
             size:state.size+10
@@ -37,13 +41,14 @@ export const reducer = (state = initialState, action) => {
         
       ;
      case "RESIZE_IMAGEM":
+      console.log("IN Reducer (state,action)",state,'  ',action);
         return{
             ...state,
             size:state.size-10
         };
 
     case "RESIZE_IMAGE_PARAM":{
-        console.log("CASE");
+      console.log("IN Reducer (state,action)",state,'  ',action);
       return{
         ...state,
         size:action.size

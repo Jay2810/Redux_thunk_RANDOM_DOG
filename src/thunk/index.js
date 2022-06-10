@@ -2,11 +2,14 @@ import { requestDog,requestDogSuccess,requestDogError,resize,resizeparambyvalue 
 import axios from "axios";
 
 export const fetchDog = () => {
+  console.log("This fetchDog is a middleware");
+  console.log("IN |thunk | fetchDogs()");
     return dispatch => {
+      console.log("original reducer will be called by this middleware");
       dispatch(requestDog());
       axios.get('https://dog.ceo/api/breeds/image/random')
       .then((res)=>{
-        console.log(res.data.message);
+        // console.log(res.data.message);
         dispatch(requestDogSuccess(res.data))
       })
       .catch((err)=>{
@@ -23,7 +26,7 @@ export const resizeimg = (value) =>{
 }
 
 export const resizeparam = (value) => {
-    console.log("PARAM",value);
+    // console.log("PARAM",value);
     return dispatch => {
         dispatch(resizeparambyvalue(value))
     }
