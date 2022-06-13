@@ -9,7 +9,14 @@ class Header extends Component {
         <div>
           <h3 style={{ padding: "30px" }}>Footer Componenet</h3>
 
-          <h4 style={{ color: "red" }}>Image URL : {this.props.url}</h4>
+          <h4 style={{ color: "red" }}>
+            Image URL :
+            {this.props.loading ? (
+              <p style={{ color: "orange" }}> Loading ... Please wait.. </p>
+            ) : (
+              <div style={{ color: "blue" }}>{this.props.url}</div>
+            )}
+          </h4>
         </div>
         <br />
         <br />

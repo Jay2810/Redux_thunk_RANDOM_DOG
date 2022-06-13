@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { fetchDog, resizeparam } from "../thunk";
 import Header from "./Header";
-import Footer from "./Footer";
+// import Footer fsrom "./Footer";
 import ConnectedFooter from "./Footer";
 
 class App extends Component {
@@ -12,17 +12,26 @@ class App extends Component {
         <div
           style={{
             border: "5px solid ",
-            marginBottom: "50px",
+            marginBottom: "20px",
           }}
         >
           <Header />
         </div>{" "}
+
+
+<div style={{
+            border: "5px solid ",
+            margin: "20px",
+            padding:"20px"
+          }}>  
+          <h3 style={{color:"green" }}>App Component</h3>
         <button
           onClick={() => {
             console.log("CLICKED SHOW DOG: this.props", this.props);
             this.props.dispatch(fetchDog());
           }}
         >
+
           <h3> Show Dog </h3>
         </button>
         {"          "}
@@ -70,13 +79,13 @@ class App extends Component {
           >
             Manual Size
           </button>
-        </h3>
+        </h3></div>
         {/* <button onClick={() => console.log(Number(document.getElementById('sizeq').value))}><h3> Resize Image by val </h3></button> */}
         <div
           style={{
             textAlign: "center",
             border: "5px solid ",
-            marginBottom: "50px",
+            marginBottom: "10px",
           }}
         >
           <ConnectedFooter />
