@@ -1,3 +1,5 @@
 # Redux_thunk_RANDOM_DOG
 
-<img src="https://github.com/Jay2810/Redux_thunk_RANDOM_DOG/blob/master/Ref/Captured.PNG" />
+Header and Footer Components Update thier data when a change is witnessed in App Cmponent.
+
+<img src="https://github.com/Jay2810/Redux_thunk_RANDOM_DOG/blob/Shared-Components/Ref/Capture2.PNG" />
