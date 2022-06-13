@@ -7,7 +7,7 @@ class Header extends Component {
     return (
       <div>
         <div>
-          <h3 style={{ padding: "30px" }}>Footer Componenet</h3>
+          <h3 style={{ padding: "30px" }}>Footer Component</h3>
 
           <h4 style={{ color: "red" }}>
             Image URL :

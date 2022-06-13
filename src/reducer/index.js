@@ -2,7 +2,7 @@ const initialState = {
   url: "https://images.dog.ceo/breeds/retriever-flatcoated/n02099267_2269.jpg",
   loading: false,
   error: false,
-  size: 150,
+  size: 250,
 };
 
 export const reducer = (state = initialState, action) => {

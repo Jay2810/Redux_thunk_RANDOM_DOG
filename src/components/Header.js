@@ -7,7 +7,7 @@ class Header extends Component {
     return (
       <div>
         <div>
-          <h3 style={{ padding: "20px" }}>Header Componenet</h3>
+          <h3 style={{ padding: "20px" }}>Header Component</h3>
           <h4 style={{ color: "blue" }}>Size : {this.props.size}</h4>
         </div>
         <br />
