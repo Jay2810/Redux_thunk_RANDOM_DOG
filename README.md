@@ -6,4 +6,6 @@ https://github.com/Jay2810/Redux_thunk_RANDOM_DOG/blob/Redux_thunk_mui/Ref/Captu
 <h3>Loading Stage</h3>
 <img src="https://github.com/Jay2810/Redux_thunk_RANDOM_DOG/blob/Shared-Components/Ref/Capture6.PNG" />
 
-<img src="https://github.com/Jay2810/Redux_thunk_RANDOM_DOG/blob/master/Ref/Captured.PNG" />
+<img src="https://github.com/Jay2810/Redux_thunk_RANDOM_DOG/blob/master/Ref/Captured5.PNG" />
+
+<img src="https://github.com/Jay2810/Redux_thunk_RANDOM_DOG/blob/master/Ref/Captured6.PNG" />
